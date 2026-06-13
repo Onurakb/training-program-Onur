@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" role="img" aria-label="Valeo logosu">
+  <!-- Gri swoosh (kavisli alt çizgi) -->
+  <path d="M8 70 C 60 88, 150 84, 196 58 L 196 70 C 150 92, 60 88, 8 80 Z" fill="#5B6770"/>
+  <!-- valeo yazısı (yeşil, kalın) -->
+  <text x="6" y="52" font-family="Arial, Helvetica, sans-serif" font-size="56"
+        font-weight="800" font-style="italic" fill="#84BD00" letter-spacing="-2">valeo</text>
+</svg>

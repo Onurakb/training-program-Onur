@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valeo — Giriş</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="giris-sayfasi">
+    <section class="giris-kart" aria-labelledby="giris-baslik">
+      <img src="assets/valeo-logo.svg" alt="Valeo logosu" class="logo" width="160" height="72">
+
+      <h1 id="giris-baslik" class="baslik">Giriş Yap</h1>
+
+      <form id="giris-form" novalidate>
+        <div class="alan">
+          <label for="kullanici">Kullanıcı adı</label>
+          <input type="text" id="kullanici" name="kullanici"
+                 autocomplete="username" required aria-required="true"
+                 placeholder="Kullanıcı adınız">
+        </div>
+
+        <div class="alan">
+          <label for="sifre">Şifre</label>
+          <div class="sifre-kutu">
+            <input type="password" id="sifre" name="sifre"
+                   autocomplete="current-password" required aria-required="true"
+                   placeholder="Şifreniz">
+            <button type="button" class="goster-btn" id="goster-btn"
+                    aria-label="Şifreyi göster" aria-pressed="false">👁</button>
+          </div>
+        </div>
+
+        <p id="hata" class="hata" role="alert" aria-live="polite"></p>
+
+        <button type="submit" class="giris-btn">Giriş</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/giris.js"></script>
+</body>
+</html>

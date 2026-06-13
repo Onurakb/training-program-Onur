@@ -1,0 +1,132 @@
+:root {
+  --valeo-yesil: #84BD00;
+  --valeo-yesil-koyu: #6fa000;
+  --gri: #5B6770;
+  --zemin: #f5f6f7;
+  --hata: #d32f2f;
+  --metin: #2b2f33;
+  --kenar: #d6d9dc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--metin);
+  background: var(--zemin);
+}
+
+.giris-sayfasi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.giris-kart {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.baslik {
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+  color: var(--gri);
+}
+
+.alan {
+  text-align: left;
+  margin-bottom: 1.1rem;
+}
+
+.alan label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.alan input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--kenar);
+  border-radius: 8px;
+}
+
+.alan input:focus {
+  outline: none;
+  border-color: var(--valeo-yesil);
+  box-shadow: 0 0 0 3px rgba(132, 189, 0, 0.25);
+}
+
+.sifre-kutu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sifre-kutu input {
+  padding-right: 3rem;
+}
+
+.goster-btn {
+  position: absolute;
+  right: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.hata {
+  min-height: 1.25rem;
+  margin: 0 0 0.75rem;
+  color: var(--hata);
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.giris-btn {
+  width: 100%;
+  min-height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: var(--valeo-yesil);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.giris-btn:hover { background: var(--valeo-yesil-koyu); }
+
+.giris-btn:focus-visible {
+  outline: 3px solid rgba(132, 189, 0, 0.45);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .giris-kart {
+    max-width: 100%;
+    box-shadow: none;
+    background: transparent;
+  }
+}
